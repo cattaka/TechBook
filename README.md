@@ -21,12 +21,12 @@ pdf を生成する場合は TeX のインストールが必須です。
     rake clean
     rake
 
-で book.pdf が出来ます(1行ですませたい場合は `rake clean pdf`)。
+で TechBook.pdf が出来ます(1行ですませたい場合は `rake clean pdf`)。
 
 中では
 
-    rm -f book.pdf
-    rm -rf book/
+    rm -f TechBook.pdf
+    rm -rf TechBook/
     review-pdfmaker config.yml
 
 のようなことしているらしいです(rake が使えない場合はこっち？)。
