@@ -1,7 +1,7 @@
 require 'fileutils'
 require 'rake/clean'
 
-BOOK = "book"
+BOOK = "TechBook"
 BOOK_PDF = BOOK+".pdf"
 BOOK_EPUB = BOOK+".epub"
 CONFIG_FILE = "config.yml"
@@ -17,7 +17,7 @@ def build_all(mode)
   sh "review-compile --all --target=#{mode} --footnotetext --stylesheet=style.css"
 end
 
-task :default => :html_all
+task :default => :pdf
 
 desc "build html (Usage: rake build re=target.re)"
 task :html do
